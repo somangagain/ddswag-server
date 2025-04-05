@@ -3,9 +3,11 @@ import "./env";
 import "./database"
 import app from "./app"
 
-const { PORT } = process.env;
+const { NODE_ENV, MONGO_URI, PORT } = process.env;
 
-if (!PORT) {
+console.log(NODE_ENV)
+
+if (!NODE_ENV || !MONGO_URI || !PORT) {
   throw new Error('environment variables are not set');
 }
 

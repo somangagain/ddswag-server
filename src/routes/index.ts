@@ -5,7 +5,7 @@ const routes = new Router();
 
 routes.use('/api', api.routes());
 
-routes.get('/', async ctx => {
+routes.get('/', async (ctx: any) => {
   ctx.body = {
     message: 'ddswag-server',
   };
