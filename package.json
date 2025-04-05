@@ -5,7 +5,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon --watch ./src --exec \"ts-node --transpileOnly ./src/server.ts\" -e ts"
+    "dev": "cross-env NODE_ENV=development nodemon --watch ./src --exec \"ts-node --transpileOnly ./src/server.ts\" -e ts",
+    "start": "ts-node src/server.ts"
   },
   "dependencies": {
     "@koa/cors": "^5.0.0",
@@ -19,6 +20,7 @@
     "koa": "^2.16.0",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^13.0.1",
+    "mongoose": "^8.13.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2"
   }
